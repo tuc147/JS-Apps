@@ -27,11 +27,32 @@ var fruits  = ["apple",'Banana','Lemon','Strawberry']
 for (var x = 0;x<fruits.length;x++){
     console.log(fruits[x]);
 }
-var fruit = prompt("Please give a fruit");
-var ind = parseInt(prompt("please give an index 1-4"));
-ind-=1;
+// var fruit = prompt("Please give a fruit");
+// var ind = parseInt(prompt("please give an index 1-4"));
+//ind-=1;
 
-fruits[ind] = fruit;
+//fruits[ind] = fruit;
 for (var x = 0;x<fruits.length;x++){
     console.log(fruits[x]+" 2");
 }
+// Object practice
+let Student = {
+    first: "Samuel",
+    last: "Fekadu",
+    email:"samft99@gmail.com"
+};
+
+console.log(Student.first+" "+Student.last);
+
+var rename = prompt("please enter your name");
+let arr  = rename.split(" ");
+console.log(arr);
+let Student2 = {
+    first: arr[0],
+    last: arr[1],
+    email:null,
+    stuInfo: function (){
+        return this.first + "\n" + this.last;
+    }
+}
+alert(Student2.stuInfo());
