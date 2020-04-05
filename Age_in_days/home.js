@@ -1,10 +1,10 @@
-console.log("Striiing");
+
 
 document.getElementById("ClickMe").onclick = function(){ makeAlert()};
 document.getElementById("Reset").onclick = function(){ reset()};
 
 function makeAlert () {
-    var age = parseInt(prompt("How old are you?"))
+    var age = parseInt(prompt("How old are you?"));
     if(typeof age == "string"){
         document.getElementById("returnText").innerHTML = "Please try again with a valid age";
 
